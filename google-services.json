@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "830239264544",
+    "firebase_url": "https://khaja-265207.firebaseio.com",
+    "project_id": "khaja-265207",
+    "storage_bucket": "khaja-265207.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830239264544:android:017c5bebeda584a6661145",
+        "android_client_info": {
+          "package_name": "com.sanim.khaja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830239264544-aimbed533crre5jvu20ul4a2e7tchh6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs4DQo5wrTou2UO9WE4ou6tY308T1SJkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830239264544-aimbed533crre5jvu20ul4a2e7tchh6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
