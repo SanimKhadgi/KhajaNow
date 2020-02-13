@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignIn">
+    tools:context="com.sanim.khaja.SignIn">
 
     <LinearLayout
         android:orientation="vertical"
@@ -19,30 +19,20 @@
             android:hint="Phone number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@android:color/white"
+            android:textColorHint="@android:color/black"
             android:textSize="34sp"
             android:text="1231231"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:inputType="phone"/>
-        <EditText
-            android:id="@+id/edtName"
-            android:hint="Name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColorHint="@android:color/white"
-            android:textSize="34sp"
-            android:text="Abc"
-            android:textColor="@android:color/white"
-            android:inputType="phone"/>
+
         <EditText
             android:id="@+id/edtPassword"
             android:hint="Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="@android:color/white"
+            android:textColorHint="@android:color/black"
             android:textSize="34sp"
-            android:text="1234"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:inputType="textPassword"/>
     </LinearLayout>
     <Button

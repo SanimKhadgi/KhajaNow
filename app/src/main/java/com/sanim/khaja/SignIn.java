@@ -30,24 +30,21 @@ public class SignIn extends AppCompatActivity {
         btnSignIn=(Button)findViewById(R.id.btnSignIn);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference table_user= database.getReference("User");
+        final DatabaseReference table_user = database.getReference("User");
          btnSignIn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
 
-                 final ProgressDialog mDiaglog= new ProgressDialog(SignIn.this);
-                 mDiaglog.setMessage("Waiting");
-                 mDiaglog.show();
+                 final ProgressDialog mDialog= new ProgressDialog(SignIn.this);
+                 mDialog.setMessage("Waiting");
+                 mDialog.show();
 
                  table_user.addValueEventListener(new ValueEventListener() {
                      @Override
                      public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                          if(dataSnapshot.child(edtPhone.getText().toString()).exists()){
-
-
-
-                            mDiaglog.dismiss();
+                            mDialog.dismiss();
                          User user  = dataSnapshot.child(edtPhone.getText().toString()).getValue(User.class);
                          if(user.getPassword().equals(edtPassword.getText().toString()))
                          {
@@ -60,6 +57,7 @@ public class SignIn extends AppCompatActivity {
                          }
                          else
                          {
+                             mDialog.dismiss();
                              Toast.makeText(SignIn.this, "User doesn't exist", Toast.LENGTH_SHORT).show();
                          }
                      }
