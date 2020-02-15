@@ -23,7 +23,7 @@
             android:textSize="34sp"
             android:text="1231231"
             android:textColor="@android:color/black"
-            android:inputType="phone"/>
+        android:inputType="phone"/>
 
         <EditText
             android:id="@+id/edtPassword"
